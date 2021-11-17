@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import { locale } from '../../localization';
 import { setLanguage } from "../../ducks/Lang/actions";
@@ -11,9 +11,15 @@ import './header.css';
 
 const Header = ({setLanguage, language}) => {
     const [menu, toggleMenu] = useState(false);
-    
+    const location = useLocation();
+
+    React.useEffect(()=>{
+        toggleMenu(false);
+    }, [location]);
+
     function changeLang(event) {
         setLanguage(event.target.value);
+        toggleMenu(false);
     }
     locale.setLanguage(language);
     return (

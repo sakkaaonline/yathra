@@ -64,7 +64,7 @@ class MainPage extends Component {
                         </div>
                     </div>
                 </div>
-                <h6 className="heading mt-5">{locale.mainpage.txt8}</h6>
+                <h6 className="heading text-center mt-5">{locale.mainpage.txt8}</h6>
                 <div className="container-fluid mt-5">
                     <div class="row">
                         <div className="col-12 col-sm-12">

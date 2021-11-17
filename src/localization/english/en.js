@@ -1,5 +1,5 @@
 export const en = {
-	"name": "Pazham Nee Pathyathra Team",
+	"name": "'Pazham Nee' Pathyathra Team",
 	"place": "Maruthavanchery",
 	"pincode": "609503",
 	"headermenu": {
