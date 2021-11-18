@@ -10,7 +10,7 @@ const About = ({language}) => {
             <Banner />
             <h6 className="heading mt-4">{locale.headermenu.about}</h6>
             <div className="container-fluid mt-5 mb-5">
-                <div class="row">
+                <div className="row">
                     <div className="col-12 col-sm-12">
                         <h2 className="text-center">{locale.about.underconstruct}</h2>
                     </div>

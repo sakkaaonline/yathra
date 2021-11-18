@@ -11,13 +11,16 @@
     margin-top: 9px;
     margin-left: 20px;
 }
+.navbar-brand p {
+    font-size: 1rem;
+}
 
 @media screen and (max-width:480px) {
     .logo {
         width: 40px;
         height: 40px;
     }
-    .navbar-brand {
+    .navbar-brand p {
         font-size: 12px;
     }
     .navbar-toggler {

@@ -11,7 +11,7 @@ const Contact = ({language}) => {
             <Banner />
             <h6 className="heading mt-4">{locale.headermenu.contact}</h6>
             <div className="container-fluid mt-5 mb-5">
-                <div class="row">
+                <div className="row">
                     <div className="col-12 col-sm-4">
                         <img src={MuruganPhoto} className="img" alt='Muruga' />
                     </div>

@@ -18,7 +18,7 @@ class MainPage extends Component {
                 <Banner />
                 <h6 className="heading mt-4">{locale.mainpage.title}</h6>
                 <div className="container-fluid mt-5">
-                    <div class="row">
+                    <div className="row">
                         <div className="col-12 col-sm-4">
                             <img src={MuruganPhoto} className="img" alt='Muruga' />
                         </div>
@@ -57,7 +57,7 @@ class MainPage extends Component {
                 </div>
                 <h6 className="heading mt-5">{locale.mainpage.txt5}</h6>
                 <div className="container-fluid mt-5">
-                    <div class="row">
+                    <div className="row">
                         <div className="col-12 col-sm-12">
                             <p className="content">{locale.mainpage.txt6}</p>
                             <p className="content">{locale.mainpage.txt7}</p>
@@ -66,7 +66,7 @@ class MainPage extends Component {
                 </div>
                 <h6 className="heading text-center mt-5">{locale.mainpage.txt8}</h6>
                 <div className="container-fluid mt-5">
-                    <div class="row">
+                    <div className="row">
                         <div className="col-12 col-sm-12">
                             <ul className="list-txt">
                                 <ol>{locale.mainpage.list17}</ol>
@@ -79,7 +79,7 @@ class MainPage extends Component {
                 </div>
                 <h6 className="heading mt-5">{locale.mainpage.txt9}</h6>
                 <div className="container-fluid mt-5">
-                    <div class="row">
+                    <div className="row">
                         <div className="col-12 col-sm-12">
                             <ul className="list-txt">
                                 <ol>{locale.mainpage.list21}</ol>
