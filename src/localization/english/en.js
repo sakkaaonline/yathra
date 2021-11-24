@@ -1,19 +1,20 @@
 export const en = {
-	"name": "'Pazham Nee' Pathyathra Team",
-	"place": "Maruthavanchery",
+	"name": "BalaSubramaniyar 'Pazham-Nee' (Pazhani)",
+	"place": "Punitha Pathyathra Team-Maruthavanchery",
 	"pincode": "609503",
 	"headermenu": {
 		"home": "Home",
 		"about": "About Us",
-		"contact": "Contact Us"
+		"contact": "Contact Us",
+		"events": "Click here for New Events!",
 	},
 	"footer": {
 		"title1": "Copyright",
-		"title2": "'Pazham Nee' Pathyathra Team, Maruthavanchery"
+		"title2": "BalaSubramaniyar 'Pazham-Nee' (Pazhani) Punitha Pathyathra Team, Maruthavanchery"
 	},
 	"banner": {
 		"txt1": "Hello! Devotees!!!",
-		"txt2": "Welcome to 'Pazham Nee' Pathyathra Team Portal",
+		"txt2": "Welcome to BalaSubramaniyar 'Pazham-Nee' (Pazhani) Punitha Pathyathra Team Portal",
 		"txt3": "Thank you!"
 	},
 	"mainpage": {
@@ -64,5 +65,9 @@ export const en = {
 	},
 	"about": {
 		"underconstruct": "Page Under Construction...Please Wait... We will Update Soon."
+	},
+	"events": {
+		"header": "Latest Events",
+		"year": "2021"
 	}
 }

@@ -64,3 +64,39 @@ header {
     margin: 0 auto 5%;
     font-style: italic;
 }
+
+.newImg {
+    width: 100px;
+}
+.velImg {
+    display: table;
+    margin: 20px auto;
+    width: 10%;
+}
+.content-head {
+    color: #076c30;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.newevents, .newevents:hover, .newevents:active {
+    text-align: center;
+    color: #fbff02;
+}
+
+.imgEvent {
+    width: 500px;
+    margin: 0 auto;
+    display: table;
+}
+
+@media screen and (max-width:480px) {
+    .imgEvent {
+        width: 100%;
+    }
+    .velImg {
+        display: table;
+        margin: 40px auto;
+        width: 50%;
+    }
+}

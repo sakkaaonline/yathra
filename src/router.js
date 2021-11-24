@@ -4,6 +4,7 @@ import Layout from "./component/Layout";
 import MainPage from "./container/mainPage";
 import About from "./component/About";
 import Contact from "./component/Contact";
+import Events from "./component/NewEvent";
 import NotFound from "./component/NotFound";
 
 const AppWrapper = () => {
@@ -14,6 +15,7 @@ const AppWrapper = () => {
                     <Route index element={<MainPage />} />
                     <Route path="about" element={<About />} />
                     <Route path="contact" element={<Contact />} />
+                    <Route path="events" element={<Events />} />
                     <Route path="*" element={<NotFound />} />
                 </Route>
             </Routes>
