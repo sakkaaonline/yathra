@@ -1,6 +1,8 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 header {
-    padding-top: 9.5rem;
-    padding-bottom: 6rem;
+    padding-top: 6.5rem;
+    padding-bottom: 2rem;
 }
 .show {
     border-top: 2px solid #2079fd !important;
@@ -29,6 +31,7 @@ header {
 .img {
     width: 100%;
     border: 1px solid #000;
+    margin-bottom: 10px;
 }
 .list-txt {
     padding-left: 0.2rem;
@@ -89,6 +92,9 @@ header {
     margin: 0 auto;
     display: table;
 }
+.navbar-dark .navbar-nav .nav-link {
+    font-size: 12px;
+}
 
 @media screen and (max-width:480px) {
     .imgEvent {
@@ -99,4 +105,24 @@ header {
         margin: 40px auto;
         width: 50%;
     }
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 16px;
+    }
+}
+/* PHOTO ALBUM */
+
+.image-gallery-thumbnail .image-gallery-thumbnail-image {
+    height: 50px;
+}
+.image-gallery {
+    background: rgba(0,0,0,0.8);
+}
+
+.quote:before, .quote:after {
+    content: '"';
+    font-style: italic;
+}
+.startquote {
+    font-style: italic;
+    text-align: center;
 }

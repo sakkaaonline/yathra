@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Banner from './Banner';
 import { locale } from '../localization';
-import MuruganPhoto from '../styles/images/Muruga.png';
+import MuruganPhoto from '../styles/images/gallery/5.jpg';
 
 const Contact = ({language}) => {
     locale.setLanguage(language);
@@ -19,8 +19,12 @@ const Contact = ({language}) => {
                         <div className="contact-box text-center mt-5">
                             <h5>{locale.name}</h5>
                             <h6>{locale.place}</h6>
+                            <h6>{locale.contact.post}</h6>
+                            <h6>{locale.contact.via}</h6>
                             <h6>{locale.contact.taluk}</h6>
                             <h6>{locale.contact.district}</h6>
+                            <h6>{locale.contact.state}</h6>
+                            <h6>{locale.contact.country}</h6>
                             <h6>{locale.pincode}</h6>
                         </div>
                     </div>

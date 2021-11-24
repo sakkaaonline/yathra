@@ -23,13 +23,10 @@ class MainPage extends Component {
                             <img src={MuruganPhoto} className="img" alt='Muruga' />
                         </div>
                         <div className="col-12 col-sm-8">
+                            <h5 className="startquote quote mt-5">{locale.banner.txt4}</h5>
                             <p className="content">{locale.mainpage.txt1}</p>
                             <p className="content">{locale.mainpage.txt2}</p>
                             <p className="content">{locale.mainpage.txt3}</p>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-12 col-sm-6">
                             <ul className="list-txt">
                                 <ol>{locale.mainpage.list1}</ol>
                                 <ol>{locale.mainpage.list2}</ol>
@@ -39,16 +36,11 @@ class MainPage extends Component {
                                 <ol>{locale.mainpage.list6}</ol>
                                 <ol>{locale.mainpage.list7}</ol>
                                 <ol>{locale.mainpage.list8}</ol>
-                            </ul>
-                        </div>
-                        <div className="col-12 col-sm-6">
-                            <ul className="list-txt">
                                 <ol>{locale.mainpage.list9}</ol>
                                 <ol>{locale.mainpage.list10}</ol>
                                 <ol>{locale.mainpage.list11}</ol>
                                 <ol>{locale.mainpage.list12}</ol>
                                 <ol>{locale.mainpage.list13}</ol>
-                                <ol>{locale.mainpage.list14}</ol>
                                 <ol>{locale.mainpage.list15}</ol>
                                 <ol>{locale.mainpage.list16}</ol>
                             </ul>

@@ -6,7 +6,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { locale } from '../../localization';
 import { setLanguage } from "../../ducks/Lang/actions";
 
-import Logo from '../../styles/images/logo.png';
+import Logo from '../../styles/images/logo.jpg';
 import './header.css';
 
 const Header = ({setLanguage, language}) => {
@@ -15,11 +15,13 @@ const Header = ({setLanguage, language}) => {
 
     React.useEffect(()=>{
         toggleMenu(false);
+        window.scrollTo(0,0);
     }, [location]);
 
     function changeLang(event) {
         setLanguage(event.target.value);
         toggleMenu(false);
+        window.scrollTo(0,0);
     }
     locale.setLanguage(language);
     return (
@@ -31,7 +33,8 @@ const Header = ({setLanguage, language}) => {
                 <div className={menu ? 'collapse navbar-collapse show' : 'collapse navbar-collapse'}>
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item"><Link className="nav-link" to="/">{locale.headermenu.home}</Link></li>
-                        <li className="nav-item"><Link className="nav-link" to="/about">{locale.headermenu.about}</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/gallery">{locale.headermenu.gallery}</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/generalInfo">{locale.headermenu.generalInfo}</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/contact">{locale.headermenu.contact}</Link></li>
                         <li className="nav-item">
                             <select name="cars" className="language" onChange={changeLang}>
