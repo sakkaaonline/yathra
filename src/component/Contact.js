@@ -3,13 +3,14 @@ import { connect } from 'react-redux';
 import Banner from './Banner';
 import { locale } from '../localization';
 import MuruganPhoto from '../styles/images/gallery/5.jpg';
+import ContactPhoto from '../styles/images/contact.jpg';
 
 const Contact = ({language}) => {
     locale.setLanguage(language);
     return (
         <React.Fragment>
             <Banner />
-            <h6 className="heading mt-4">{locale.headermenu.contact}</h6>
+            <h6 className="heading text-center mt-4">{locale.headermenu.contact}</h6>
             <div className="container-fluid mt-5 mb-5">
                 <div className="row">
                     <div className="col-12 col-sm-4">
@@ -27,6 +28,9 @@ const Contact = ({language}) => {
                             <h6>{locale.contact.country}</h6>
                             <h6>{locale.pincode}</h6>
                         </div>
+                    </div>
+                    <div className="col-12 col-sm-4 mt-3">
+                        <img src={ContactPhoto} className="img rounded" alt='ContactPhoto' />
                     </div>
                 </div>
             </div>

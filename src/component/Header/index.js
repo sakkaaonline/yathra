@@ -34,7 +34,7 @@ const Header = ({setLanguage, language}) => {
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item"><Link className="nav-link" to="/">{locale.headermenu.home}</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/gallery">{locale.headermenu.gallery}</Link></li>
-                        <li className="nav-item"><Link className="nav-link" to="/generalInfo">{locale.headermenu.generalInfo}</Link></li>
+                        <li className="nav-item"><Link className="nav-link" to="/facebookpage">{locale.headermenu.facebookpage}</Link></li>
                         <li className="nav-item"><Link className="nav-link" to="/contact">{locale.headermenu.contact}</Link></li>
                         <li className="nav-item">
                             <select name="cars" className="language" onChange={changeLang}>

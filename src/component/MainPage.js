@@ -13,10 +13,12 @@ class MainPage extends Component {
     }
     render() {
         locale.setLanguage(this.props.language);
+        const totalyears = new Date(new Date('2022/08/01') - new Date('1988/09/01')).getFullYear() - 1970;
         return (
             <React.Fragment>
                 <Banner />
                 <h6 className="heading mt-4">{locale.mainpage.title}</h6>
+                <p className="content text-center mt-3">{locale.mainpage.year0}{totalyears}{locale.mainpage.year}</p>
                 <div className="container-fluid mt-5">
                     <div className="row">
                         <div className="col-12 col-sm-4">

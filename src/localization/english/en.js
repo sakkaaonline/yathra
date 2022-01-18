@@ -6,6 +6,7 @@ export const en = {
 		"home": "Home",
 		"gallery": "Photo Gallery",
 		"generalInfo": "Pazhani Yathra (General Info)",
+		"facebookpage": "Facebook Page",
 		"contact": "Contact Us",
 		"events": "Click here for New Events!",
 		"goback": "<= Go Back"
@@ -22,6 +23,8 @@ export const en = {
 	},
 	"mainpage": {
 		"title": "Punitha Pathyathra Kuzhu-Maruthavanchery",
+		"year0": "We are in ",
+		"year": "th year of punitha pathyathra",
 		"txt1": "Thiruvarur district, Nannilam Taluk, Marthavanchery village were Sri Manuneethishwarar & Maanika Sivagama Sundari Temple was found 'Sri Balasubramaniyar Swami'. Every year we are doing Patha Yathra for Lord Muruga",
 		"txt2": "''பாதங்கள் நோகாது பாதகங்கள் நேராது வேதங்கள் போற்றும் வேலவனே காப்பாய் !!!''",
 		"txt3": "Devotees worship Muruka to solve the following problems.",
@@ -59,7 +62,7 @@ export const en = {
 		"list26": "Man realises the transitoriness of this world.",
 		"list27": "It creates a feeling that there is a divinity which helps us.",
 		"contentauthor": " - Dr. R. Kannan",
-		"list29": "",
+		"list29": "Please follow our Facebook Page for get more update instantly.",
 	},
 	"contact": {
 		"village": "Village",
