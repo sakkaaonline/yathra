@@ -7,6 +7,7 @@ const Footer = ({language}) => {
     return (
         <footer className="py-5 bg-dark">
             <div className="container px-4"><p className="m-0 text-center text-white">{locale.footer.title1} &copy; {locale.footer.title2}</p></div>
+            <img className="alignC" src="https://hitwebcounter.com/counter/counter.php?page=7934944&style=0006&nbdigits=5&type=ip&initCount=0" title="Free Counter" alt="web counter" border="0" />
         </footer>
     )
 }

@@ -119,6 +119,7 @@ export const en = {
 	},
 	"events": {
 		"header": "Latest Events",
-		"year": "2021"
+		"year": "2021",
+		"loadingtxt": "Please Wait, Loading..."
 	}
 }

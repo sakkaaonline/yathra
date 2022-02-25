@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import Banner from './Banner';
 import { locale } from '../localization';
-import MuruganPhoto from '../styles/images/kandhasasti.jpg';
 
 const Facebook = ({language}) => {
     locale.setLanguage(language);
@@ -15,7 +14,8 @@ const Facebook = ({language}) => {
                 <div className="container-fluid mt-5">
                     <div className="row">
                         <div className="col-12 col-sm-12 mt-1 mb-5">
-                        <iframe 
+                        <iframe
+                        title="Facebook_Muruga"
                         src={url}
                         width={window.screen.width-20}
                         height='500'
