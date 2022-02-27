@@ -120,6 +120,19 @@ export const ta = {
 	"events": {
 		"header": "புதிய தகவல்கள்",
 		"year": "2021",
-		"loadingtxt": "தயவு செய்து காத்திருக்கவும்.."
+		"loadingtxt": "தயவு செய்து காத்திருக்கவும்..",
+		"comment": "கருத்துக்களை தெரிவிக்க",
+		"recentcomment": "இந்த பதிவு தொடர்பான சமீபத்திய கருத்துக்கள்.",
+		"latestcomment": "பயனர்களின் சமீபத்திய கருத்துப் பிரிவு",
+		"nocomments": "இதுவரை பதிவுகள் எதுவும் இல்லை",
+		"commentusrhead": "உங்கள் கருத்துக்களை பதிவிட",
+		"usrname": "உங்களுடைய பெயர்",
+		"holderusrname": "பெயர்",
+		"usrmobile": "தொலைபேசி எண்",
+		"holderusrmobile": "தொலைபேசி எண்",
+		"usrcomment": "உங்களுடைய கருத்து ",
+		"holderusrcomment":"உங்களுடைய கருத்து...",
+		"usrsubmit": "பதிவு செய்",
+		"saved": "Thank you for your comment!"
 	}
 }

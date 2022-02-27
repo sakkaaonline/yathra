@@ -120,6 +120,19 @@ export const en = {
 	"events": {
 		"header": "Latest Events",
 		"year": "2021",
-		"loadingtxt": "Please Wait, Loading..."
+		"loadingtxt": "Please Wait, Loading...",
+		"comment": "Add Comment",
+		"recentcomment": "Recent Comments.",
+		"latestcomment": "Latest Comments section by Users",
+		"nocomments": "No Comments",
+		"commentusrhead": "Add your comment here",
+		"usrname": "Your Name",
+		"holderusrname": "Name",
+		"usrmobile": "Your Mobilenumber",
+		"holderusrmobile": "Mobilenumber",
+		"usrcomment": "Comments",
+		"holderusrcomment":"Your comments",
+		"usrsubmit": "Submit",
+		"saved": "Thank you for your comment!"
 	}
 }

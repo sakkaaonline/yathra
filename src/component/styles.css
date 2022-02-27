@@ -158,3 +158,78 @@ header {
     margin-top: 20%;
     color: #0b4daf;
 }
+.comment {
+    width: 30px;
+}
+.commentpopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #eee;
+    z-index: 9999;
+    font-size: 12px;
+}
+
+.commentpopup .close {
+    color: #0374ff;
+    position: relative;
+    top: 30px;
+    right: 20px;
+    z-index: 100;
+    font-weight: bold;
+}
+.comment-area {
+    width: 100%;
+    height:200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-top: 1px solid #9e9e9e;
+    border-bottom: 1px solid #9e9e9e;
+}
+.overallcomment-area {
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.nocomments {
+    color: #3f51b5;
+    text-align: center;
+    margin-top: 60px;
+}
+.avatar {
+    width: 40px;
+    height: 40px;
+    background: #dedede;
+    float: left;
+    text-align: center;
+    padding-top: 6px;
+    font-weight: bold;
+    color: #4e8097;
+}
+.form-label.required:after {
+    content:"*";
+    color:red;
+    font-weight: bold;
+}
+.mobile {
+    font-size: 9px;
+    color: #3c519e;
+}
+.modal {
+    background: rgba(0,0,0,0.8);
+}
+.show {
+    border: 0 !important;
+    margin:0 !important
+}
+
+.comment-body {
+    padding: 0.5rem;
+}
+
+.commented-on {
+    font-size: 13px;
+}

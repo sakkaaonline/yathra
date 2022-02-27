@@ -4,6 +4,7 @@ import Banner from './Banner';
 import ImageGallery from 'react-image-gallery';
 import NewImg from '../styles/images/newgif.gif';
 import Vel from '../styles/images/Vel.png';
+import Comment from "./Comment";
 import FacebookEmbed from "./FacebookEmbed";
 import { locale } from '../localization';
 
@@ -11,6 +12,9 @@ const Events = ({language}) => {
     locale.setLanguage(language);
     const [isLoading, setIsLoading] = React.useState(true);
     const [data, setData] = React.useState([]);
+    const [comment, setComment] = React.useState(false);
+    const [commentdata, setCommentData] = React.useState([]);
+    const [clickedpost, setClickPost] = React.useState('');
     React.useEffect(() => {
       const url = `${process.env.PUBLIC_URL}/json/yathra.json`;
       fetch(url)
@@ -44,6 +48,22 @@ const Events = ({language}) => {
     }
     const showDateFrom = (date) => {
       return new Date(date).getTime()
+    }
+
+    function showcommentbox(postid) {
+      const url = `${process.env.PUBLIC_URL}/getpost.php?postid=${postid}`;
+      fetch(url)
+        .then((response) => response.json())
+        .then((json) => {
+          setClickPost(postid);
+          setCommentData(json);
+          setComment(true);
+        })
+        .catch((error) => console.log(error));
+    }
+
+    function closecommentbox() {
+      setComment(false);
     }
     return (
         <React.Fragment>
@@ -80,6 +100,20 @@ const Events = ({language}) => {
                                 className="imgEvent mb-2" />
                             ))}
                           </div>
+                          {
+                            user.comments && (
+                              <div class="card-footer text-muted">
+                                <span onClick={() => showcommentbox(user.id)}>
+                                  <img
+                                      key={`comment${user.id}`}
+                                      src={`${currentDomain}comment.png`}
+                                      alt={`comment${user.id}`}
+                                      className="comment" />
+                                    <span>{locale.events.comment}</span>
+                                </span>
+                              </div>
+                            )
+                          }                      
                         </div><img src={Vel} className='velImg' alt="vel" /></>
                       }
                       { user.type === 'videopost' && currentDate > showDateFrom(user.showFromDate) &&
@@ -91,6 +125,20 @@ const Events = ({language}) => {
                             ))}
                             <p className="card-text mx-2">{user.desc}</p>
                           </div>
+                          {
+                            user.comments && (
+                              <div class="card-footer text-muted">
+                                <span onClick={() => showcommentbox(user.id)}>
+                                  <img
+                                      key={`comment${user.id}`}
+                                      src={`${currentDomain}comment.png`}
+                                      alt={`comment${user.id}`}
+                                      className="comment" />
+                                    <span>{locale.events.comment}</span>
+                                </span>
+                              </div>
+                            )
+                          }
                         </div><img src={Vel} className='velImg' alt="vel" /></>
                       }
                       {
@@ -101,13 +149,44 @@ const Events = ({language}) => {
                             <ImageGallery items={sliderImages(user.primaryImg)} slideInterval={6000} infinite={true} showFullscreenButton={false} useBrowserFullscreen={false} autoPlay={true} showBullets={true} />
                             {user.desc && <p className="card-text mx-2">{user.desc}</p>}
                           </div>
+                          {
+                            user.comments && (
+                              <div class="card-footer text-muted">
+                                <span onClick={() => showcommentbox(user.id)}>
+                                  <img
+                                      key={`comment${user.id}`}
+                                      src={`${currentDomain}comment.png`}
+                                      alt={`comment${user.id}`}
+                                      className="comment" />
+                                    <span>{locale.events.comment}</span>
+                                </span>
+                              </div>
+                            )
+                          }
                         </div><img src={Vel} className='velImg' alt="vel" /></>
                       }
                     </div>
                   ))
                 )}
               </div>
-            </div>            
+            </div>
+            {
+              comment && (
+                <div className={comment ? 'modal fade show d-block' : 'modal fade d-none'} id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div className="modal-dialog modal-dialog-scrollable">
+                    <div className="modal-content">
+                      <div className="modal-header">
+                        <h6 className="modal-title" id="staticBackdropLabel">{locale.events.recentcomment}<span class="badge bg-primary">{commentdata && commentdata.length > 0 ? commentdata.length : '0'}</span></h6>
+                        <button type="button" className="btn-close" onClick={() => closecommentbox()} aria-label="Close"></button>
+                      </div>
+                      <div className="modal-body comment-body">
+                        <Comment postid={clickedpost} data={commentdata} />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )
+            }           
             <h5 className="endtxt mt-5">{locale.banner.txt3}</h5>
         </React.Fragment>
     );
