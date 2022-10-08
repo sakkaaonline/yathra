@@ -8,7 +8,7 @@ const FacebookEmbed = ({ embedId }) => (
     <ReactPlayer
         url={embedId}
         controls={false}
-        playing={true}
+        playing={false}
         width='100%'
         height='100%'
         playsinline={true}

@@ -13,7 +13,7 @@ class MainPage extends Component {
     }
     render() {
         locale.setLanguage(this.props.language);
-        const totalyears = new Date(new Date('2022/08/01') - new Date('1988/09/01')).getFullYear() - 1970;
+        const totalyears = new Date(new Date() - new Date('1988/11/15')).getFullYear() - 1970;
         return (
             <React.Fragment>
                 <Banner />
